@@ -79,6 +79,7 @@ leo run new_gesture aleo10l5gua633p9tzw5f87a9m7snfq6cpx0p9qccd8g64zjjld52lu9scmp
 
 ### 3. Player 2 Generate new gesture
 Now, we need to extend hand and make a gesture for Player 2. For this example, Player 2 choose Paper in round 1.
+
 **Run**
 ```bash
 leo run new_gesture aleo1wyvu96dvv0auq9e4qme54kjuhzglyfcf576h0g3nrrmrmr0505pqd6wnry 1u32 2u8
@@ -100,6 +101,7 @@ leo run new_gesture aleo1wyvu96dvv0auq9e4qme54kjuhzglyfcf576h0g3nrrmrmr0505pqd6w
 
 ### 4. Compare the gestures
 Now, the judge uses two gestures to compare which one wins or it's a tie.
+
 **Run**
 ```bash
 leo run compare "{
@@ -120,6 +122,7 @@ leo run compare "{
 ```
 
 And the output tells the Player 2 wins!
+
 **Output**
 ```bash
 ➡️  Outputs
