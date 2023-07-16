@@ -1,0 +1,10 @@
+{
+    "program": "rps.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkp7nzfqG2AkHu7dyh82cSE5NvLDuJswLfFFyoY5DhF78Q8",
+        "address": "aleo1cyt22sj0gqcrm4xy8cum7tq9klsx9745laej870xnxzgtcez6qgse0mxvk"
+    },
+    "license": "MIT"
+}

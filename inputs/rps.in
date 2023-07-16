@@ -1,0 +1,22 @@
+// The program input for rps/src/main.leo
+[new_gesture]
+player: address = aleo10l5gua633p9tzw5f87a9m7snfq6cpx0p9qccd8g64zjjld52lu9scmpwdm;
+round: u32 = 1u32;
+hand: u8 = 1u8;
+
+
+[compare]
+gesture0: Gesture = Gesture {
+    owner: aleo10l5gua633p9tzw5f87a9m7snfq6cpx0p9qccd8g64zjjld52lu9scmpwdm.private,
+    hand: 1u8.private,
+    round: 1u32.private,
+    win: false.private,
+    _nonce: 1825473932243863338249020149741875081591399817427933684542963490438816761088group.public
+};
+gesture1: Gesture = Gesture {
+  owner: aleo10l5gua633p9tzw5f87a9m7snfq6cpx0p9qccd8g64zjjld52lu9scmpwdm.private,
+  hand: 2u8.private,
+  round: 1u32.private,
+  win: false.private,
+  _nonce: 4100583043652327146123384471918346683660147761059696123539564407128234851689group.public
+}
