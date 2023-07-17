@@ -14,8 +14,15 @@ program rps.aleo {
         win: bool,          // win or not
     }
 
+    // public states for rounds
     mapping rounds: u32 => Round;
 
+    // Returns a new gesture.
+    // - `player` : The address of the account that extend hand and make the gesture.
+    // - `round` : The round of the gesture.
+    // - `hand` : The hand of the gesture, 1 for Rock, 2 for Paper, 3 for Scissors.
+    // Requires that `hand` should be either of Rock, Paper, or Scissors.
+    // One round for 2 players, save these public states in rounds.
     transition new_gesture(player: address, round: u32, hand: u8) -> Gesture {
         assert(hand >= 1u8);
         assert(hand <= 3u8);
@@ -51,6 +58,10 @@ program rps.aleo {
         }
     }
 
+    // Returns gestures and marks the winner.
+    // - `gesture0` : Player 1's gesture.
+    // - `gesture1` : Player 2's gesture.
+    // Make the round finished, and set tie flag if it's a tie.
     transition compare(gesture0: Gesture, gesture1: Gesture) -> (Gesture, Gesture) {
         // Only same round can be compared
         assert_eq(gesture0.round, gesture1.round);
