@@ -1,5 +1,5 @@
-// The 'rps' program.
-program rps.aleo {
+// The 'rock_paper_scissors' program.
+program rock_paper_scissors.aleo {
     struct Round {
         finished: bool, // the round is finished or not
         players: u8,    // number of players/gesture in the round
