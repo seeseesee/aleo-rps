@@ -1,5 +1,6 @@
 # Rock Paper Scissors
 
+## Description
 Rock-paper-scissors is a simple hand gesture game played between two players. Each player simultaneously makes a hand gesture representing either rock, paper, or scissors. The outcome of the game is determined by the following rules:
 
 1. Rock beats scissors.
@@ -13,6 +14,9 @@ Based on the rules mentioned above, compare the gestures of the two players to d
 Determine the winner based on the outcome. If both players choose the same gesture, the game is a tie.
 
 In our Rock-paper-scissors game, players will be able to engage in multiple rounds where only two gestures (from two players) are compared in each round. In our DAPP, the number 1 represents "Rock," the number 2 represents "Paper," and the number 3 represents "Scissors." After each round of comparison, the gestures used in that round are not allowed to be used again, and new gestures are generated for the next round of play.
+
+## Why it would add value to the Aleo ecosystem
+Aleo's core revolves around programmable privacy, empowering users to maintain control over their data instead of relying on public nodes for record-keeping. In our Rock-paper-scissors game, we showcase how Aleo ensures player privacy by allowing each player to keep their chosen gesture secret. Prior to the comparison, players remain unaware of their opponent's gesture, aligning perfectly with the principles of commit-and-reveal.
 
 *The owner of the gesture record is set to the judge responsible for running the compare. So two records don't have any Input record signer problems.*
 
